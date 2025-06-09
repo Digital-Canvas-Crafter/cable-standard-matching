@@ -1,16 +1,14 @@
-﻿body {
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     text-align: center;
 }
-
 
 .container {
     display: flex;
     justify-content: space-around;
     margin: 20px;
 }
-
 
 .t568a, .t568b {
     width: 40%;
@@ -20,14 +18,29 @@
     border-radius: 5px;
 }
 
+.pin-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.pin {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 5px;
+}
 
 .dropzone {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 10px;
 }
-
 
 .color-box {
     width: 100px;
@@ -36,16 +49,17 @@
     cursor: pointer;
 }
 
-
+/* Solid colors */
 [data-color="green"] { background-color: green; }
-[data-color="white-green"] { background-color: #d0f0c0; }
 [data-color="blue"] { background-color: blue; }
-[data-color="white-blue"] { background-color: #add8e6; }
 [data-color="orange"] { background-color: orange; }
-[data-color="white-orange"] { background-color: #ffcc99; }
 [data-color="brown"] { background-color: brown; }
-[data-color="white-brown"] { background-color: #d2b48c; }
 
+/* Striped colors */
+[data-color="white-green"] { background: repeating-linear-gradient(45deg, white 0%, white 50%, green 50%, green 100%); }
+[data-color="white-blue"] { background: repeating-linear-gradient(45deg, white 0%, white 50%, blue 50%, blue 100%); }
+[data-color="white-orange"] { background: repeating-linear-gradient(45deg, white 0%, white 50%, orange 50%, orange 100%); }
+[data-color="white-brown"] { background: repeating-linear-gradient(45deg, white 0%, white 50%, brown 50%, brown 100%); }
 
 #result {
     margin-top: 20px;
