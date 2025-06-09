@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T568 Color Scheme Practice</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T568 Color Scheme Practice</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>T568A and T568B Color Scheme Matching</h1>
-    <div class="container">
-        <div class="t568a">
-            <h2>T568A</h2>
-            <div class="dropzone" id="t568a-dropzone">
-                <div class="color-box" data-color="green" draggable="true" id="box1"></div>
-                <div class="color-box" data-color="white-green" draggable="true" id="box2"></div>
-                <div class="color-box" data-color="blue" draggable="true" id="box3"></div>
-                <div class="color-box" data-color="white-blue" draggable="true" id="box4"></div>
-                <div class="color-box" data-color="orange" draggable="true" id="box5"></div>
-                <div class="color-box" data-color="white-orange" draggable="true" id="box6"></div>
-                <div class="color-box" data-color="brown" draggable="true" id="box7"></div>
-                <div class="color-box" data-color="white-brown" draggable="true" id="box8"></div>
-            </div>
-        </div>
-        <div class="t568b">
-            <h2>T568B</h2>
-            <div class="dropzone" id="t568b-dropzone">
-                <div class="color-box" data-color="orange" draggable="true" id="box9"></div>
-                <div class="color-box" data-color="white-orange" draggable="true" id="box10"></div>
-                <div class="color-box" data-color="green" draggable="true" id="box11"></div>
-                <div class="color-box" data-color="white-green" draggable="true" id="box12"></div>
-                <div class="color-box" data-color="blue" draggable="true" id="box13"></div>
-                <div class="color-box" data-color="white-blue" draggable="true" id="box14"></div>
-                <div class="color-box" data-color="brown" draggable="true" id="box15"></div>
-                <div class="color-box" data-color="white-brown" draggable="true" id="box16"></div>
-            </div>
-        </div>
-    </div>
-    <button id="checkButton">Check Answers</button>
-    <div id="result"></div>
-    <script src="script.js"></script>
+    <h1>T568A and T568B Color Scheme Matching</h1>
+    <div class="container">
+        <div class="t568a">
+            <h2>T568A</h2>
+            <div class="pin-column">
+                <div class="pin">Pin 1</div>
+                <div class="pin">Pin 2</div>
+                <div class="pin">Pin 3</div>
+                <div class="pin">Pin 4</div>
+                <div class="pin">Pin 5</div>
+                <div class="pin">Pin 6</div>
+                <div class="pin">Pin 7</div>
+                <div class="pin">Pin 8</div>
+            </div>
+            <div class="dropzone" id="t568a-dropzone">
+                <div class="color-box" data-color="white-green" draggable="true" id="box1"></div>
+                <div class="color-box" data-color="green" draggable="true" id="box2"></div>
+                <div class="color-box" data-color="white-orange" draggable="true" id="box3"></div>
+                <div class="color-box" data-color="orange" draggable="true" id="box4"></div>
+                <div class="color-box" data-color="white-blue" draggable="true" id="box5"></div>
+                <div class="color-box" data-color="blue" draggable="true" id="box6"></div>
+                <div class="color-box" data-color="white-brown" draggable="true" id="box7"></div>
+                <div class="color-box" data-color="brown" draggable="true" id="box8"></div>
+            </div>
+        </div>
+        <div class="t568b">
+            <h2>T568B</h2>
+            <div class="pin-column">
+                <div class="pin">Pin 1</div>
+                <div class="pin">Pin 2</div>
+                <div class="pin">Pin 3</div>
+                <div class="pin">Pin 4</div>
+                <div class="pin">Pin 5</div>
+                <div class="pin">Pin 6</div>
+                <div class="pin">Pin 7</div>
+                <div class="pin">Pin 8</div>
+            </div>
+            <div class="dropzone" id="t568b-dropzone">
+                <div class="color-box" data-color="white-orange" draggable="true" id="box9"></div>
+                <div class="color-box" data-color="orange" draggable="true" id="box10"></div>
+                <div class="color-box" data-color="white-green" draggable="true" id="box11"></div>
+                <div class="color-box" data-color="green" draggable="true" id="box12"></div>
+                <div class="color-box" data-color="white-blue" draggable="true" id="box13"></div>
+                <div class="color-box" data-color="blue" draggable="true" id="box14"></div>
+                <div class="color-box" data-color="white-brown" draggable="true" id="box15"></div>
+                <div class="color-box" data-color="brown" draggable="true" id="box16"></div>
+            </div>
+        </div>
+    </div>
+    <button id="checkButton">Check Answers</button>
+    <div id="result"></div>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
